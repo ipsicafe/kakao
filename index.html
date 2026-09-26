@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#FEE500">
+  <title>통합11구역 주민 정보방</title>
+  <meta name="description" content="통합11구역 입주민을 위한 단톡방 입장 안내입니다. 카카오톡 이름 변경 방법과 이용 약속을 확인해 주세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="통합11구역 주민 정보방">
+  <meta property="og:description" content="통합11구역 예비주민대표단(임상혁 카톡방) 입장 안내입니다.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FEE500'/%3E%3Cpath d='M13 49V28l12-9 9 7 8-6 9 7v22H13z' fill='%233a2a12'/%3E%3Cpath d='M27 49V37h10v12' fill='%23FEE500'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    :root{--brown:#3a2a12;--brown2:#2a1e0c;--yellow:#FEE500;--yellow2:#FFD233;--soft:#FFF6C2;--ink:#2b2416;--muted:#6e6350;--line:#EDE3C4;--paper:#FFFCEF;--white:#fff;--green:#16764b}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Pretendard,"Noto Sans KR",system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:16px}a{color:inherit}.wrap{width:min(100% - 36px,760px);margin:auto}
+    .hero{background:linear-gradient(160deg,var(--yellow),var(--yellow2));color:var(--brown2);padding:26px 0 62px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:320px;height:320px;border:70px solid rgba(58,42,18,.06);border-radius:50%;right:-170px;top:-120px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:.95rem;overflow-wrap:anywhere}.mark{flex:none;width:32px;height:32px;border-radius:9px;background:var(--brown);display:grid;place-items:center;color:var(--yellow);font-weight:900;font-size:.8rem}.eyebrow{display:inline-flex;margin-top:48px;padding:7px 12px;border:1px solid rgba(58,42,18,.3);border-radius:999px;font-size:.85rem;font-weight:600}.hero h1{font-size:clamp(2rem,7vw,3.4rem);line-height:1.18;letter-spacing:-.045em;margin:18px 0 16px}.hero p{color:#4d3d1f;max-width:590px;margin:0;font-size:1.05rem}.hero strong{color:var(--brown2)}
+    main{margin-top:-30px;position:relative;z-index:1;padding-bottom:150px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;margin-bottom:18px;box-shadow:0 12px 34px rgba(90,70,10,.08)}.notice{border-top:5px solid var(--yellow)}.notice h2,.section-title{font-size:1.42rem;letter-spacing:-.025em;margin:0 0 12px}.notice ul{padding-left:22px;margin:12px 0 0}.notice li+li{margin-top:7px}.badge{display:inline-flex;align-items:center;gap:7px;color:var(--green);font-weight:800;font-size:.9rem}.badge:before{content:"";width:8px;height:8px;background:var(--green);border-radius:50%}
+    .steps{counter-reset:step}.step{position:relative;padding:3px 0 26px 56px}.step:last-child{padding-bottom:0}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:12px;background:var(--yellow);color:var(--brown);display:grid;place-items:center;font-weight:900}.step:not(:last-child):after{content:"";position:absolute;left:18px;top:44px;bottom:7px;width:2px;background:var(--line)}.step h3{margin:0 0 5px;font-size:1.08rem}.step p{margin:0;color:var(--muted)}.name-example{margin-top:10px;background:var(--soft);border-radius:12px;padding:13px 15px;font-weight:800;color:var(--brown)}
+    .guide-layout{display:grid;grid-template-columns:minmax(220px,280px) 1fr;gap:28px;align-items:start}.video-wrap{position:sticky;top:18px}.guide-video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#1e170a;border-radius:18px;box-shadow:0 14px 34px rgba(90,70,10,.2)}.video-caption{margin:10px 0 0;text-align:center;color:var(--muted);font-size:.86rem}.guide-copy>p{margin:0 0 18px;color:var(--muted)}
+    .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.info{border:1px solid var(--line);border-radius:15px;padding:17px}.info h3{font-size:1rem;margin:0 0 6px}.info p{color:var(--muted);margin:0;font-size:.93rem}.rule{display:flex;gap:12px;padding:15px 0;border-bottom:1px solid var(--line)}.rule:last-child{border:0;padding-bottom:0}.icon{flex:0 0 34px;height:34px;border-radius:10px;background:var(--yellow);display:grid;place-items:center;font-weight:900;color:var(--brown)}.rule strong{display:block}.rule span{color:var(--muted);font-size:.93rem}
+    .privacy{font-size:.9rem;color:var(--muted);background:var(--soft);border-radius:13px;padding:14px 16px;margin-top:18px}.cta-box{text-align:center;background:var(--brown);color:#fff;border:0}.cta-box p{color:#efe3c2;margin:8px 0 20px}.cta{display:inline-flex;width:100%;min-height:56px;align-items:center;justify-content:center;gap:8px;border:0;border-radius:14px;background:var(--yellow);color:var(--brown2);text-decoration:none;font-size:1.05rem;font-weight:900;cursor:pointer}.cta:hover{filter:brightness(1.04)}.cta:focus-visible{outline:4px solid #fff;outline-offset:3px}.cta svg{width:22px;height:22px;fill:var(--brown2)}.small{font-size:.82rem;color:#d9cba4!important;margin:12px 0 0!important}.pw{margin:0 0 16px;color:var(--ink);background:#fff;text-align:left}.pw b{color:var(--green)}.footer{text-align:center;color:#8a7f66;font-size:.85rem;padding:26px 0}
+    .sticky-join{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:50;width:min(calc(100% - 24px),760px);display:grid;grid-template-columns:74px 1fr;gap:10px;align-items:center;padding:9px;background:rgba(42,30,12,.96);border:1px solid rgba(255,255,255,.15);border-radius:18px;box-shadow:0 12px 35px rgba(30,20,0,.38);backdrop-filter:blur(10px)}.sticky-join .cta{min-height:58px}.click-cue{height:58px;border-radius:13px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--brown);font-size:.72rem;font-weight:900;line-height:1}.click-cue svg{width:25px;height:25px;margin-top:3px;fill:var(--yellow);stroke:var(--brown);stroke-width:2;animation:tap 1s ease-in-out infinite;transform-origin:center bottom}@keyframes tap{0%,100%{transform:translateY(2px) scale(1)}50%{transform:translateY(-5px) scale(1.08)}}
+    @media(max-width:600px){.wrap{width:min(100% - 28px,760px)}.hero{padding-top:20px}.hero h1{font-size:2.18rem}.card{padding:21px;border-radius:17px}.info-grid{grid-template-columns:1fr}.eyebrow{margin-top:38px}.section-title,.notice h2{font-size:1.27rem}.guide-layout{grid-template-columns:1fr;gap:24px}.video-wrap{position:static;width:min(100%,300px);margin:auto}.guide-copy>p{text-align:center}.sticky-join{bottom:8px;grid-template-columns:64px 1fr;padding:7px;border-radius:16px}.sticky-join .cta{min-height:54px;font-size:.98rem}.click-cue{height:54px}.click-cue svg{width:23px;height:23px}}
+  </style>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#FEE500"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="#FEE500"/><text x="32" y="41" font-size="24" font-weight="900" text-anchor="middle" fill="#3a2a12" font-family="sans-serif">11</text></svg></template>
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand"><span class="mark">11</span>통합11구역 예비주민대표단</div>
+      <div class="eyebrow">임상혁 카톡방 · 입주민 안내</div>
+      <h1>통합11구역<br>주민 정보방</h1>
+      <p><strong>통합11구역 입주민</strong>이 함께 재건축 관련 정보를 나누는 단톡방입니다. 입장 전에 아래 안내를 확인해 주세요.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="card notice">
+      <div class="badge">입장 전 확인</div>
+      <h2>통합11구역 입주민이 함께합니다</h2>
+      <ul>
+        <li>통합11구역 재건축 추진 관련 정보를 나눕니다.</li>
+        <li>통합11구역 입주민 모두 참여할 수 있습니다.</li>
+        <li>입주민 확인을 위해 카카오톡 이름에 성함과 단지·동·호수를 표시해 주세요.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="nickname">
+      <h2 class="section-title">영상으로 보는 카카오톡 이름 변경 방법</h2>
+      <div class="guide-layout">
+        <div class="video-wrap">
+          <video class="guide-video" controls playsinline preload="metadata" aria-label="단톡방 이름 변경 방법 안내 영상">
+            <source src="pro.mp4#t=0.1" type="video/mp4">
+            사용 중인 브라우저에서는 영상을 재생할 수 없습니다.
+          </video>
+          <p class="video-caption">재생 버튼을 누르면 안내 영상이 시작됩니다.</p>
+        </div>
+        <div class="guide-copy">
+          <p>영상을 보면서 아래 순서대로 변경해 주세요.</p>
+          <div class="steps">
+            <div class="step"><h3>단톡방 오른쪽 위 메뉴를 누릅니다</h3><p>단톡방 화면에서 오른쪽 위의 메뉴 아이콘을 선택해 참여자 목록을 확인합니다.</p></div>
+            <div class="step"><h3>내 프로필을 선택합니다</h3><p>참여자 목록에서 본인의 프로필을 누른 다음 연필 모양의 편집 버튼을 선택합니다.</p></div>
+            <div class="step"><h3>이름과 단지·동·호수를 입력합니다</h3><p>입주민 확인과 원활한 소통을 위해 단지명을 포함해 주세요.</p><div class="name-example">예시: 백승필 / 청솔 5동 202호<br>거주 단지명을 함께 적어 주세요.</div></div>
+            <div class="step"><h3>완료 또는 저장을 누릅니다</h3><p>변경된 이름이 단톡방에 표시되는지 마지막으로 확인해 주세요.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">왜 함께 준비해야 하나요?</h2>
+      <div class="info-grid">
+        <article class="info"><h3>정확한 정보 공유</h3><p>추진 일정, 설명 자료, 주민 안내 등 확인된 내용을 빠르게 나눕니다.</p></article>
+        <article class="info"><h3>11구역 입주민의 소통</h3><p>통합11구역 입주민의 의견을 나누고 서로의 궁금증을 함께 풀어갑니다.</p></article>
+        <article class="info"><h3>주민 의견 수렴</h3><p>추진 과정에서 필요한 의견과 질문을 모아 보다 투명하게 공유합니다.</p></article>
+        <article class="info"><h3>차분한 공론의 장</h3><p>확인되지 않은 소문보다 자료와 사실을 중심으로 대화합니다.</p></article>
+      </div>
+      <div class="privacy">※ 이 페이지는 기본 안내용입니다. 통합재건축의 세부 내용은 관계 기관의 공식 발표와 예비주민대표단의 확인된 안내를 기준으로 합니다.</div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">단톡방 이용 약속</h2>
+      <div class="rule"><div class="icon">1</div><div><strong>존중하는 대화</strong><span>서로 다른 의견도 예의를 갖춰 나눕니다.</span></div></div>
+      <div class="rule"><div class="icon">2</div><div><strong>확인된 정보 중심</strong><span>출처가 불분명한 내용은 사실처럼 단정하지 않습니다.</span></div></div>
+      <div class="rule"><div class="icon">3</div><div><strong>개인정보 보호</strong><span>방 안의 연락처, 대화, 자료를 동의 없이 외부에 공유하지 않습니다.</span></div></div>
+      <div class="rule"><div class="icon">4</div><div><strong>목적에 맞는 소통</strong><span>광고, 영업, 정치·종교 홍보 등 추진과 무관한 게시물은 삼갑니다.</span></div></div>
+      <div class="rule"><div class="icon">5</div><div><strong>야간 채팅 자제</strong><span>주민들의 편안한 휴식을 위해 밤 12시부터 다음 날 아침 7시까지는 긴급한 경우를 제외하고 채팅을 최대한 자제해 주세요.</span></div></div>
+    </section>
+
+    <section class="card cta-box" id="join">
+      <h2 class="section-title">안내를 모두 확인하셨나요?</h2>
+      <p>카카오톡 이름에 단지·동·호수를 표시한 뒤 통합11구역 주민 단톡방에 입장해 주세요.</p>
+      <div class="privacy pw"><strong>입장 비밀번호 안내</strong><br><b>비밀번호 없이</b> 바로 입장하실 수 있습니다.</div>
+      <a class="cta" href="https://open.kakao.com/o/gF5GLROi" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.5 2 10.8c0 2.8 1.9 5.2 4.7 6.6l-1 3.6c-.1.3.3.6.6.4l4.3-2.8c.5.1 1 .1 1.4.1 5.5 0 10-3.5 10-7.9S17.5 3 12 3Z"/></svg>통합11구역 주민 단톡방 입장하기</a>
+      <p class="small">버튼을 누르면 카카오톡 오픈채팅 입장 화면으로 이동합니다.</p>
+    </section>
+    <div class="footer">통합11구역 예비주민대표단(임상혁 카톡방) · 주민 정보교류 안내</div>
+  </main>
+  <aside class="sticky-join" aria-label="단톡방 바로 입장">
+    <div class="click-cue" aria-hidden="true"><span>클릭!</span><svg viewBox="0 0 32 32"><path d="M15 3c1.7 0 3 1.3 3 3v7.2l1.4-1.4a3 3 0 0 1 4.2 0l.8.8a3 3 0 0 1 3.9.3l.5.5a3 3 0 0 1 .2 4L23.8 26c-.9 1.3-2.4 2-4 2h-5.1c-1.7 0-3.3-.8-4.3-2.2l-5.8-7.7a3 3 0 0 1 4.5-3.9l2.9 2.5V6c0-1.7 1.3-3 3-3Z"/></svg></div>
+    <a class="cta" href="https://open.kakao.com/o/gF5GLROi" target="_blank" rel="noopener noreferrer">통합11구역 주민 단톡방 입장하기</a>
+  </aside>
+</body>
+</html>
